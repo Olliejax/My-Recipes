@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creamy Classic Hummus</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+      <img src="./Pictures/Recept2-hummus.png" alt="Creamy hummus in a bowl surrounded by veg and pita" />
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Classic Hummus</h1>
+            <table>
+        <tbody>
+          <tr><th>Title</th><td>Classic hummus</td></tr>
+          <tr><th>Tags</th><td><code>spread</code>, <code>apero</code></td></tr>
+          <tr><th>Date</th><td><code>09-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>10 /10</td></tr>
+          <tr><th>Author</th><td> Me ☺︎ </td></tr>
+        </tbody>
+      </table>
+
+      <p>Smooth, garlicky hummus made with canned chickpeas, tahini, lemon, and a pinch of salt. Perfect for pita bread, crudités, or as a sandwich spread.</p>
+
+      <ul class="meta">
+        <li> ⏲️ Prep time: 10 min</li>
+        <li> 🍳 Cook time: 0 min</li>
+        <li> 🍽️ Servings: ...</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>800grams Chickpeas (drained, liquid reserved for thinning)</li>
+        <li>Lemon (fresh juice)</li>
+        <li>1 garlic clove</li>
+        <li>1-2 tablespoons Tahini</li>
+        <li>Pinch of Cumin or Paprika powder </li>
+        <li>pinch of Salt</li>
+        <li>1 tablespoon Olive oil (and to drizzle over)</li>
+        <li>(ice cubes, optional, for extra‑creamy texture)</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Drain the chickpeas, reserving some of the liquid (aquafaba) to adjust the consistency later.</li>
+        <li>Add the chickpeas, tahini, freshly squeezed lemon juice, minced garlic, salt, cumin or paprika powder, olive oil and a couple of ice cubes to a food processor or blender.</li>
+        <li>Blend on high until smooth and creamy, scraping down the sides as needed.</li>
+        <li>If the hummus is too thick, gradually add a bit of the reserved chickpea liquid or cold water until you reach the desired texture.</li>
+        <li>Taste and adjust: add more lemon for brightness, more salt for flavor, or more tahini for richness.</li>
+        <li>Transfer to a bowl, drizzle with a little olive oil, and serve with pita, crackers, or fresh vegetables (Carrots ♡).</li>
+      </ol>
+
+      <h2>Variations</h2>
+      <p>You can turn the same basic hummus into many fun flavors by adding different spices and vegetables. Mix in the extra ingredients while blending, or fold them in at the end.</p>
+
+      <ul class="arrow-sum">
+        <li>&rarr; <strong>Spiced “Masala” hummus</strong>: add masala spice blend (turmeric, cumin, coriander, za'atar and a pinch of chili).</li>
+        <li>&rarr; <strong>Smoked paprika hummus</strong>: add canned pepper, smoked paprikapowder, and a pinch of cayenne pepper.</li>
+        <li>&rarr; <strong>Sweet potato hummus</strong>: add mashed cooked sweet potato.</li>
+        <li>&rarr; <strong>Mango‑Chilli hummus</strong>: add frozen mango pieces, chillies.</li>
+        <li>&rarr; <strong>Lime-Coriander hummus</strong>: add lime juice and fresh coriander.</li>
+        <li>&rarr; <strong>Beetroot hummus</strong>: add cooked or raw beetroot, cumin, and a touch of cayenne pepper.</li>
+     </ul>
+
+      
+    </section>
+  </main>
+</body>
+</html>

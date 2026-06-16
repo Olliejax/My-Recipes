@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avocado with Rice Vinegar Dressing</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Avocado with Rice Vinegar Dressing</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Avocado with Rice Vinegar Dressing</td></tr>
+          <tr><th>Tags</th><td><code>dressing</code>, <code>quick</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>A simple avocado dish dressed with rice vinegar, olive oil, salt, and pepper, great as a light salad or topping.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 2 min</li>
+        <li>🍳 Cook time: 0 min</li>
+        <li>🍽️ Servings: 2</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1 ripe avocado</li>
+        <li>1 tablespoon rice vinegar</li>
+        <li>1 theespoon olive oil</li>
+        <li>Pepper to taste</li>
+        <li>Pinch of salt</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Cut the avocado in half, remove the pit, and slice or cube the flesh into a closeable jar.</li>
+        <li>Add all the other ingredient in to the jar.</li>
+        <li>Shake the jar until all ingredients are well combined and the avocado is smooth.</li>
+        <li>Add additional water for the prefered consistency.</li>
+      </ol>
+
+    </section>
+  </main>
+</body>
+</html>

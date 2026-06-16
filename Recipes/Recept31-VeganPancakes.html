@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fluffy Spelt Pancakes</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Fluffy Spelt Pancakes</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Fluffy Spelt Pancakes</td></tr>
+          <tr><th>Tags</th><td><code>breakfast</code>, <code>vegan</code>, <code>pancakes</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>7 /10</td></tr>
+          <tr><th>Author</th><td> Do Not Remeber</td></tr>
+        </tbody>
+      </table>
+
+      <p>Light, fluffy spelt pancakes made with whole spelt flour, almond milk, coconut blossom sugar, baking powder, plant‑based oil, baking soda, and apple cider vinegar.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 10 min</li>
+        <li>🍳 Cook time: 15 min</li>
+        <li>🍽️ Servings: about 8–10 pancakes</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>300 g spelt flour</li>
+        <li>2 tablespoons coconut blossom sugar (or any plant‑based sugar)</li>
+        <li>1 tablespoon baking powder</li>
+        <li>420 g almond milk</li>
+        <li>1 tablespoon plant‑based oil</li>
+        <li>Pinch of salt</li>
+        <li>1 tablespoon baking soda (add just before the last step)</li>
+        <li>1 tablespoon apple cider vinegar (add last)</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>In a large bowl, whisk together the spelt flour, coconut blossom sugar, baking powder, and a pinch of salt.</li>
+        <li>In a separate bowl or measuring cup, combine the almond milk, plant‑based oil, and apple cider vinegar. Let sit for 1–2 minutes to form a light “buttermilk” mixture.</li>
+        <li>Pour the wet ingredients into the dry ingredients and stir gently until just combined; do not overmix, a few lumps are fine.</li>
+        <li>Right before cooking, add the baking soda and mix very gently and briefly to keep the batter airy.</li>
+        <li>Heat a non‑stick frying pan or griddle over medium‑low heat and lightly oil the surface.</li>
+        <li>Use a ladle or measuring cup to pour the batter onto the pan in small rounds, leaving space between them.</li>
+        <li>When small bubbles appear on the surface and the edges start to look set, flip the pancakes and cook the other side until golden brown.</li>
+        <li>Repeat until all the batter is used, keeping cooked pancakes warm if needed.</li>
+        <li>Serve warm with maple syrup, fresh fruit, or a dollop of nut butter.</li>
+      </ol>
+
+      <h2>Notes</h2>
+      <ul>
+        <li>The apple cider vinegar and baking soda create extra lift, so mix the batter very gently and avoid over‑mixing.</li>
+        <li>For a thinner batter, add a splash of extra almond milk; for thicker pancakes, let the batter rest for 5 minutes before starting to cook.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

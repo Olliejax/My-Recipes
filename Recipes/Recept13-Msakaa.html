@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Msakaa</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="/Pictures/Recept13-Msakaa.png" alt="Tomato and aubergine msakaa with chickpeas and hummus" />
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Msakaa</h1>
+
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Msakaa</td></tr>
+          <tr><th>Tags</th><td><code>vegan</code>, <code>dinner</code>, <code>middle eastern</code>, <code>aubergine</code></td></tr>
+          <tr><th>Date</th><td><code>2026-04-10</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>Soft aubergine and chickpeas cooked in a rich tomato sauce with onion, garlic, and warm spices. Delicious with naan bread and hummus.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 20 min</li>
+        <li>🍳 Cook time: 35 min</li>
+        <li>🍽️ Servings: 4</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>Tomatoes (peeled)</li>
+        <li>Onion</li>
+        <li>Aubergine</li>
+        <li>Garlic</li>
+        <li>Chickpeas</li>
+        <li>Naan bread</li>
+        <li>Hummus</li>
+        <li>Spices</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Cut the aubergine into cubes, sprinkle with salt, and let it sit for 10–15 minutes. Pat dry.</li>
+        <li>Chop the onion and garlic. Peel the tomatoes and cut into small pieces.</li>
+        <li>Heat oil in a large pan and sauté the onion until soft. Add garlic and spices and cook for 1 minute.</li>
+        <li>Add tomatoes and cook down into a sauce.</li>
+        <li>Add aubergine and chickpeas, then simmer until aubergine is soft and sauce thickens.</li>
+        <li>Serve warm with naan bread and hummus.</li>
+      </ol>
+
+    </section>
+  </main>
+</body>
+</html>

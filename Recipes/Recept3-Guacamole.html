@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guacamole</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="./Pictures/Recept3-Guaca.png" alt="Guacamole" />
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a> 
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Guacamole</h1>
+
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Guacamole</td></tr>
+          <tr><th>Tags</th><td> <code>snack</code>, <code>apero</code></td></tr>
+          <tr><th>Date</th><td><code>2026-04-10</code></td></tr>
+          <tr><th>Personal Score</th><td>10 /10</td></tr>
+          <tr><th>Author</th><td>Appi heijn ☺</td></tr>
+        </tbody>
+      </table>
+
+      <p>Creamy guacamole made with ripe avocados, lime, garlic, chili, shallots, and tomato. Great with tortilla chips, bread, or as a topping.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 10 min</li>
+        <li>🍳 Cook time: 0 min</li>
+        <li>🍽️ Servings: 4</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>2 avocados</li>
+        <li>1 red chili pepper</li>
+        <li>1 lime</li>
+        <li>2 garlic cloves</li>
+        <li>Shallots</li>
+        <li>1 tomato</li>
+        <li>Salt and pepper</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Finely chop the garlic place in a bowl.</li>
+        <li>Cut the avocados in half, remove the pits, and scoop the flesh into a bowl.</li>
+        <li>Mash the avocado with a fork until it is as smooth or chunky as you like.</li>
+        <li>Finely chop the red chili pepper, shallots and tomato.</li>
+        <li>Add the chopped ingredients to the avocado.</li>
+        <li>Squeeze in the lime juice and season with salt and pepper.</li>
+        <li>Mix everything together, taste, and adjust the seasoning if needed before serving.</li>
+      </ol>
+
+       <h2>Variations</h2>
+      <p>You can turn the same basic hummus into many fun flavors by adding different spices and vegetables.</p>
+
+      <ul class="arrow-sum">
+        <li>&rarr; <strong>Sweet mango guacamole</strong>: add mango and a bit of coriander.</li>
+        <li>&rarr; <strong>Indian spiced guacamole</strong>: Incorporate ginger, green chillies and a hint of umin or garam masala.</li>
+
+     </ul>
+
+    </section>
+  </main>
+</body>
+</html>

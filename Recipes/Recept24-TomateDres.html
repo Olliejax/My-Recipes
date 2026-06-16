@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tomato Basil Vinaigrette</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Tomato Basil Vinaigrette</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Tomato Basil Vinaigrette</td></tr>
+          <tr><th>Tags</th><td><code>dressing</code>, <code>easy</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>A fresh tomato dressing made with cherry tomatoes, olive oil, basil, red wine vinegar, shallot, salt, and pepper.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 5 min</li>
+        <li>🍳 Cook time: 0 min</li>
+        <li>🍽️ Servings: about 4 (dressing)</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1 cup cherry tomatoes, halved or quartered</li>
+        <li>3 tablespoons olive oil</li>
+        <li>2 tablespoons fresh basil, finely chopped</li>
+        <li>1 tablespoon red wine vinegar</li>
+        <li>1 small shallot, finely minced</li>
+        <li>Pepper to taste</li>
+        <li>Pinch of salt</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>In a foodprocessor, combine the shallot and red wine vinegar and let sit for 1–2 minutes so the shallot softens and the flavors meld.</li>
+        <li>Add the olive oil, salt, and pepper, then whisk until the mixture is slightly thickened and emulsified.</li>
+        <li>Stir in the chopped basil and the cherry tomatoes (cut side up if you like them more “chunky”).</li>
+        <li>Taste and adjust: add a bit more vinegar for extra tang, a pinch more salt, or a little more olive oil if it’s too sharp.</li>
+        <li>For a thinner dressing, mash some of the tomatoes or stir with a fork to release more juice.</li>
+      </ol>
+
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

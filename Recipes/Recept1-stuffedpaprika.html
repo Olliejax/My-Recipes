@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stuffed Peppers with Falafel</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="./Pictures/Recept1-gevuldepaprika.png" alt="Stuffed peppers with falafel" />
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+
+    <section class="content">
+      <h1>Stuffed Peppers with Falafel</h1>
+            <table>
+        <tbody>
+          <tr><th>Title</th><td>Stuffed Peppers with Falafel</td></tr>
+          <tr><th>Tags</th><td><code>vegan</code>, <code>lunch</code>, <code>diner</code></td></tr>
+          <tr><th>Date</th><td><code>09-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td> Do Not Remember ☹︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>Healthy stuffed peppers with quinoa, orange, and falafel, a light but filling lunch or party dish.</p>
+
+      <ul class="meta">
+        <li> ⏲️ Prep time: 20 min</li>
+        <li> 🍳 Cook time: 30 min</li>
+        <li> 🍽️ Servings: 4</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>4 (yellow) bell peppers</li>
+        <li>250 grams quinoa or couscous</li>
+        <li>1 fennel bulb</li>
+        <li>2 oranges or mandarins</li>
+        <li>1 cucumber</li>
+        <li>2 tablespoons capers</li>
+        <li>3 spring onions</li>
+        <li>1 bunch mint</li>
+        <li>300 grams falafel</li>
+        <li>200 grams baby spinach</li>
+        <li>3 tablespoons olive oil</li>
+        <li>4 tablespoons hummus</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Preheat the oven to 190°C (375°F).</li>
+        <li>Remove the top of the peppers and a small piece from the bottom so they stand upright. Discard the seeds and rinse the peppers clean. Place them upright in a baking dish, sprinkle lightly with olive oil, and bake for about 15 minutes until they are soft and have a golden‑brown edge.</li>
+        <li>In the meantime, prepare the quinoa or couscous according to the package instructions. You can add a bit of beet juice if you want the quinoa to turn pink.</li>
+        <li>Finely chop the cucumber, spring onions, fennel, and 3 sprigs of mint. Zest the oranges and set the zest aside. Then cut the orange segments into pieces.</li>
+        <li>Let the quinoa or couscous cool slightly, then transfer it to a bowl. Add the cucumber, spring onions, mint, capers, fennel, orange zest, and orange segments. Season with salt and pepper to taste.</li>
+        <li>Heat a bit of oil in a frying pan and fry the falafel balls until golden brown.</li>
+        <li>Remove the peppers from the oven and fill them with the quinoa mixture. Drizzle a little olive oil on top.</li>
+        <li>Take a plate, arrange a bed of baby spinach, place the stuffed peppers on top, and serve with the falafel balls and hummus.</li>
+      </ol>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mango Lime Mustard Dressing</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Mango Lime Mustard Dressing</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Mango Lime Mustard Dressing</td></tr>
+          <tr><th>Tags</th><td><code>dressing</code>, <code>foodprocessor</code>, <code>quick</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>A sweet and tangy dressing made with mango, lime, mustard, rice vinegar, plant‑based oil, and salt, perfect for tropical salads and grain bowls.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 5 min</li>
+        <li>🍳 Cook time: 0 min</li>
+        <li>🍽️ Servings: about 4 (dressing)</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1 ripe mango, flesh diced</li>
+        <li>Juice of 1 lime</li>
+        <li>1 teaspoon mustard (Dijon or whole grain)</li>
+        <li>1 tablespoon rice vinegar</li>
+        <li>4 tablespoons plant‑based oil (e.g. sunflower or rapeseed oil)</li>
+        <li>Pinch of salt</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Peel and dice the mango, then add it to a blender or food processor.</li>
+        <li>Squeeze the lime over the mango and add the mustard, rice vinegar, and a pinch of salt.</li>
+        <li>Pulse or blend until the mixture is smooth and well combined.</li>
+        <li>With the blender running, gradually pour in the plant‑based oil until the dressing thickens slightly and emulsifies.</li>
+        <li>Taste and adjust: add a bit more lime juice for extra tang, a touch more oil if it’s too sharp, or a little more salt if needed.</li>
+      </ol>
+
+
+    </section>
+  </main>
+</body>
+</html>

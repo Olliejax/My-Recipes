@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beet Apple Juice</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Beet Apple Juice</h1>
+
+ <table>
+        <tbody>
+          <tr><th>Title</th><td>Beet Apple Juice</td></tr>
+          <tr><th>Tags</th><td><code>juice</code>, <code>energy</code>, <code>endurance</code></td></tr>
+          <tr><th>Date</th><td><code>2026-04-10</code></td></tr>
+          <tr><th>Personal Score</th><td>10 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>Sweet and earthy red beet juice mixed with apple juice. Powerful nitrate source for stamina and circulation.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 30 min</li>
+        <li>🍳 Cook time: 0 min</li>
+        <li>🍽️ Yield: 1 bottles</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>2-3 large red beet</li>
+        <li>apples</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Peel and chop beet into juicer-sized chunks.</li>
+        <li>Juice the beet (add ginger if using).</li>
+        <li>Mix beet juice with apple juice.</li>
+        <li>Serve immediately over ice or store refrigerated up to 24h.</li>
+      </ol>
+
+      <h2>Nutritional Benefits</h2>
+    <table class="nutritional-table">
+        <thead>
+    <tr>
+      <th>Ingredient</th>
+      <th>Vitamin/Compound</th>
+      <th>Scientific Role</th>
+      <th>Real Life Benefit</th>
+    </tr>
+  </thead>
+        <tbody>
+          <tr><td>Red Beet</td><td>Nitrates → NO</td><td>↓NOS inhibition, ↑cGMP, vasodilation via smooth muscle relaxation</td><td>Lower blood pressure, better workout stamina</td></tr>
+          <tr><td>Red Beet</td><td>Betalaïns</td><td>Phase II enzyme induction (Nrf2), ↓NF-κB, ROS scavenging</td><td>Reduces inflammation, liver detox support</td></tr>
+          <tr><td>Red Beet</td><td>Folate (B9)</td><td>DHFR substrate, DNA methylation, homocysteine → methionine</td><td>Energy production, healthy blood cells</td></tr>
+          <tr><td>Red Beet</td><td>Manganese</td><td>Superoxide dismutase (SOD) cofactor, glycosylation</td><td>Strong antioxidant defense, bone health</td></tr>
+          <tr><td>Apple Juice</td><td>Vitamin C</td><td>Prolyl hydroxylase cofactor, Fe²⁺ regeneration</td><td>Healthy skin, immune support</td></tr>
+          <tr><td>Apple Juice</td><td>Quercetin</td><td>SGLT2 inhibition, ↓aldose reductase, ↑GLUT4 translocation</td><td>Better blood sugar control, heart protection</td></tr>
+        </tbody>
+      </table>
+
+    </section>
+  </main>
+</body>
+</html>

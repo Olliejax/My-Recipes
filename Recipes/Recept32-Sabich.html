@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabich</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="./Pictures/Recept32-Sabich.png" alt="Roasted eggplant hummus with pitas, cucumber, and red onion" />
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Sabich</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Sabich - Roasted Eggplant Hummus Pitas</td></tr>
+          <tr><th>Tags</th><td><code>vegan</code>, <code>lunch</code>, <code> dinner</code> <code>middle eastern</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>Rosy roasted eggplant and chickpea hummus wrapped in warm pita bread with cucumber, red onion, harissa, lime, and fresh coriander.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 10 min</li>
+        <li>🍳 Cook time: 25 min</li>
+        <li>🍽️ Servings: 4–6 pita servings</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1 large eggplant, sliced or cubed</li>
+        <li>1 cucumber, sliced or diced</li>
+        <li>1 red onion, thinly sliced</li>
+        <li>200 g hummus (store‑bought or homemade)</li>
+        <li>2 teaspoons harissa (or to taste)</li>
+        <li>150 g chickpeas, drained and optionally roasted</li>
+        <li>Large handful fresh coriander / cilantro, roughly chopped</li>
+        <li>Juice of 1 lime</li>
+        <li>2 tablespoons olive oil</li>
+        <li>4–6 pita breads</li>
+        <li>Salt and pepper to taste</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Preheat the oven to 200°C (400°F). Toss the eggplant pieces with a drizzle of olive oil, a pinch of salt and pepper, and roast on a baking tray for 20–25 minutes until soft and slightly browned.</li>
+        <li>While the eggplant roasts, slice the cucumber and red onion and set aside.</li>
+        <li>In a small bowl, mix the hummus with harissa to taste; add a splash of lime juice and a teaspoon of olive oil if you prefer it looser.</li>
+        <li>If you like extra texture, toss the chickpeas in a bit of olive oil and roast alongside the eggplant for the last 10–15 minutes until slightly crunchy.</li>
+        <li>Warm the pita bread in the oven, toaster, or pan until soft and pliable.</li>
+        <li>Spread the harissa‑spiked hummus inside each pita, then layer in the roasted eggplant, roasted chickpeas, cucumber, red onion, and fresh coriander.</li>
+        <li>Drizzle with a little extra olive oil and a squeeze of lime juice, then fold or stuff the pita and serve immediately.</li>
+      </ol>
+
+      <h2>Serving suggestions</h2>
+      <ul>
+        <li>Perfect hot out of the oven as a filling lunch or picnic meal.</li>
+      </ul>
+
+    </section>
+  </main>
+</body>
+</html>

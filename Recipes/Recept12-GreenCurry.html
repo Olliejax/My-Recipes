@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Curry</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="./Pictures/Recept12-GroeneCurry.png" alt="Creamy green curry with vegetables and vegan shawarma" />
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Green Curry</h1>
+
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Green Curry</td></tr>
+          <tr><th>Tags</th><td><code>vegan</code>, <code>dinner</code>, <code>curry</code>, <code>spicy</code></td></tr>
+          <tr><th>Date</th><td><code>2026-04-10</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>Creamy vegan green curry with coconut milk, fresh herbs, broccoli, peas, and vegan shawarma. Fragrant, spicy, and full of fresh flavor.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 20 min</li>
+        <li>🍳 Cook time: 20 min</li>
+        <li>🍽️ Servings: 4</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1 white onion</li>
+        <li>2 garlic cloves</li>
+        <li>1 piece fresh ginger</li>
+        <li>Fresh coriander</li>
+        <li>1 green chili pepper</li>
+        <li>Peas</li>
+        <li>Spring onion</li>
+        <li>1 can coconut milk</li>
+        <li>Broccoli</li>
+        <li>Green asparagus</li>
+        <li>Snow peas</li>
+        <li>1 red chili pepper</li>
+        <li>1 lime</li>
+        <li>Fresh basil</li>
+        <li><strong>Optional with vegan shawarma or themphe and additional vegetables:</strong> bell peppers, zucchini</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Finely chop the onion, garlic, ginger, coriander stems, and green chili pepper.</li>
+        <li>Heat a little oil in a large pan or wok and sauté the onion, garlic, ginger, and green chili until soft and fragrant.</li>
+        <li>Add the coconut milk and stir well to create the sauce.</li>
+        <li>Add the broccoli, snow peas, peas, and any optional vegetables such as green asparagus. Let everything simmer until the vegetables are tender but still bright.</li>
+        <li>Add the vegan shawarma and let it heat through in the sauce.</li>
+        <li>Finish with sliced spring onion, red chili, lime juice, fresh coriander, and basil. Taste and adjust with extra lime or salt if needed.</li>
+      </ol>
+
+    </section>
+  </main>
+</body>
+</html>

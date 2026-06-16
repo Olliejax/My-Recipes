@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spicy Sesame Garlic Stir‑Fry Sauce</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Spicy Sesame Garlic Stir‑Fry Sauce</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Spicy Sesame Garlic Marinade</td></tr>
+          <tr><th>Tags</th><td><code>sauce</code>, <code>asian</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>A savory, slightly spicy sauce made with plant‑based oil, garlic, chili pepper, sesame oil, soy sauce, spring onion, and pear, great for stir‑fries and noodles.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 5 min</li>
+        <li>🍳 Cook time: 5 min</li>
+        <li>🍽️ Servings: about 4 (sauce)</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>3 tablespoons plant‑based oil (e.g. sunflower or rapeseed oil)</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 small fresh chili pepper, finely chopped (adjust to taste)</li>
+        <li>1 teaspoon sesame oil</li>
+        <li>2 tablespoons soy sauce</li>
+        <li>2 spring onions, thinly sliced</li>
+        <li>1 small pear, grated or finely diced (optional, for subtle sweetness)</li>
+        <li>Pinch of salt if needed</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Heat the plant‑based oil in a small pan over medium heat.</li>
+        <li>Add the minced garlic and chopped chili pepper and fry gently for about 1–2 minutes until fragrant, being careful not to burn the garlic.</li>
+        <li>Remove the pan from the heat and stir in the sesame oil and soy sauce so the mixture doesn’t get too hot.</li>
+        <li>Transfer the sauce to a bowl and let it cool slightly.</li>
+        <li>Stir in the spring onions and the grated or diced pear; the pear adds a mild sweetness and helps the sauce cling to noodles or vegetables.</li>
+        <li>Taste and adjust seasoning, adding a pinch of salt if needed.</li>
+        <li>Drizzle over stir‑fried vegetables, noodles, or tofu, or use as a dipping sauce for dumplings or spring rolls.</li>
+      </ol>
+
+      <h2>Serving suggestions</h2>
+      <ul>
+        <li>Perfect tossed into a quick veggie stir‑fry or noodle dish.</li>
+        <li>Also great as a marinade base for tofu or tempeh before pan‑frying.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

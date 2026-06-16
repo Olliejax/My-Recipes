@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ginger Soy Dressing</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Ginger Soy Dressing</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Ginger Soy Dressing</td></tr>
+          <tr><th>Tags</th><td><code>dressing</code>, <code>vegan</code>, <code>asian</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Albert heijn</td></tr>
+        </tbody>
+      </table>
+
+      <p>A savory, slightly sweet ginger dressing made with fresh ginger, white wine vinegar, soy sauce, sesame oil, and agave.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 3 min</li>
+        <li>🍳 Cook time: 0 min</li>
+        <li>🍽️ Servings: about 4 (dressing)</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1 small piece fresh ginger, finely grated or minced</li>
+        <li>2 tablespoons white wine vinegar</li>
+        <li>2 tablespoons soy sauce</li>
+        <li>1 teaspoon sesame oil</li>
+        <li>1 teaspoon agave syrup</li>
+        <li>Pinch of salt if needed</li>
+        <li>1–2 tablespoons water (optional, for thinner consistency)</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>In a small bowl or jar, combine the grated ginger, white wine vinegar, soy sauce, sesame oil, and agave syrup.</li>
+        <li>Whisk or shake well until the mixture is smooth and the flavors are well blended.</li>
+        <li>If the dressing is too strong or thick, add 1–2 tablespoons of water and whisk again until you reach your preferred consistency.</li>
+        <li>Taste and adjust: add a bit more agave for extra sweetness, a little more soy sauce for saltiness, or a touch more vinegar if you want more tang.</li>
+      </ol>
+
+
+    </section>
+  </main>
+</body>
+</html>

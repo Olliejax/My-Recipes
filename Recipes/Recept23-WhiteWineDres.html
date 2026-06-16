@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>White Wine Vinaigrette</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>White Wine Vinaigrette</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>White Wine Vinaigrette</td></tr>
+          <tr><th>Tags</th><td><code>dressing</code>, <code>quick</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>A light and balanced vinaigrette made with white wine vinegar, mustard, plant‑based oil, water, agave syrup, salt, and pepper.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 3 min</li>
+        <li>🍳 Cook time: 0 min</li>
+        <li>🍽️ Servings: about 4 (dressing)</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>3 tablespoons white wine vinegar</li>
+        <li>1 tablespoon water</li>
+        <li>1 teaspoon mustard</li>
+        <li>6 tablespoons plant‑based oil (e.g. sunflower or rapeseed oil)</li>
+        <li>Pepper to taste</li>
+        <li>Pinch of salt</li>
+        <li>1 teaspoon agave syrup</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>In a small bowl or jar, combine the white wine vinegar and water, then whisk in the mustard until smooth.</li>
+        <li>Add the salt and a generous amount of pepper, and whisk again so the mustard and seasonings are well blended.</li>
+        <li>Stir in the agave syrup to taste; this adds a subtle sweetness that balances the acidity.</li>
+        <li>Slowly pour in the plant‑based oil while whisking continuously until the dressing is slightly thickened and emulsified.</li>
+      </ol>
+
+
+    </section>
+  </main>
+</body>
+</html>

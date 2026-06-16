@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balsamic Mustard Vinaigrette</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Balsamic Mustard Vinaigrette</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Balsamic Mustard Vinaigrette</td></tr>
+          <tr><th>Tags</th><td><code>dressing</code>, <code> foodprocessor <code>, </code><code>quick</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>A sweet and tangy balsamic vinaigrette with mustard, agave, olive oil, salt, and pepper, perfect for salads and grain bowls.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 3 min</li>
+        <li>🍳 Cook time: 0 min</li>
+        <li>🍽️ Servings: about 4 (dressing)</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>3 tablespoons balsamic vinegar</li>
+        <li>1 teaspoon agave syrup</li>
+        <li>1 teaspoon mustard (Dijon or whole grain)</li>
+        <li>4 tablespoons olive oil</li>
+        <li>Pepper to taste</li>
+        <li>Pinch of salt</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>In a foodprocessor combine the balsamic vinegar, agave syrup, mustard, salt, and pepper.</li>
+        <li>mix until the mixture is smooth and well blended.</li>
+        <li>Slowly pour in the olive oil while whisking continuously, until the dressing has thickened slightly and is emulsified.</li>
+        <li>Taste and adjust: add a bit more balsamic vinegar for extra tang, a little more agave if you want it sweeter, or an extra pinch of salt and pepper if needed.</li>
+      </ol>
+
+    </section>
+  </main>
+</body>
+</html>

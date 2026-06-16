@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kimchi Wontons</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="./Pictures/Recept14-OvenWontons.png" alt="Crispy kimchi wontons with kimchi puree" />
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Kimchi Wontons</h1>
+            <table>
+        <tbody>
+          <tr><th>Title</th><td>Kimchi Wontons</td></tr>
+          <tr><th>Tags</th><td><code>vegan</code>, <code>apero</code>, <code>korean</code>, <code>wontons</code></td></tr>
+          <tr><th>Date</th><td><code>2026-04-10</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>Crispy oven-baked wontons filled with Jerusalem artichoke-hazelnut puree and served with spicy kimchi dipping sauce.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 30 min</li>
+        <li>🍳 Cook time: 10 min</li>
+        <li>🍽️ Servings: 12 wontons</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+     
+        <strong>For kimchi puree:</strong></li>
+         <ul>
+        <li>1 garlic clove, finely chopped</li>
+        <li>1 piece ginger (5g), finely chopped</li>
+        <li>2 tbsp agave syrup</li>
+        <li>Sea salt</li>
+        <li>2 tsp tamari (or soy sauce)</li>
+        <li>1 spring onion stalk, finely chopped</li>
+        <li>½ carrot, finely chopped</li>
+        <li>2 tbsp gochugaru (Korean chili flakes)</li>
+        <li>50 ml water</li>
+        </ul>
+
+        <strong>For wontons:</strong></li>
+        <ul>
+        <li>1 tbsp olive oil</li>
+        <li>1 tsp cumin seeds</li>
+        <li>150 g Jerusalem artichoke, peeled and chopped</li>
+        <li>25 g hazelnuts</li>
+        <li>200 ml water</li>
+        <li>Sea salt</li>
+        <li>12 wonton wrappers</li>
+        </ul>
+        
+        <strong>To serve:</strong></li>
+        <ul>    
+        <li>Fresh coriander</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li><strong>Kimchi puree:</strong> Blend all kimchi puree ingredients until smooth. Use blender or stick blender.</li>
+        <li><strong>Wonton filling:</strong> Preheat oven to 180°C. Heat olive oil and cumin seeds in pot until seeds crackle.</li>
+        <li>Add Jerusalem artichoke, hazelnuts, and water. Simmer until water evaporates and artichoke is soft.</li>
+        <li>Puree with blender or stick blender. Season with salt.</li>
+        <li><strong>Assemble wontons:</strong> Line baking dish with parchment paper. Wet finger with water.</li>
+        <li>Place 1 tsp filling in center of wonton wrapper. Wet all 4 corners, bring corners together, pinch to seal. Place in dish. Repeat.</li>
+        <li>Bake 10 minutes until golden and crispy.</li>
+        <li>Serve hot with kimchi puree for dipping and fresh coriander.</li>
+      </ol>
+
+      <h2>Variations</h2>
+      <p>You can experiment with different fillings and flavors for the wontons.</p>
+
+      <ul class="arrow-sum">
+        <li>&rarr; <strong>Spicy pumpkin wontons:</strong> Use pumpkin instead of Jerusalem artichoke, add chili flakes to filling.</li>
+        <li>&rarr; <strong>Mushroom wontons:</strong> Replace Jerusalem artichoke with finely chopped mushrooms.</li>
+        <li>&rarr; <strong>Sweet potato wontons:</strong> Use roasted sweet potato for naturally sweet filling.</li>
+      </ul>
+
+    </section>
+  </main>
+</body>
+</html>

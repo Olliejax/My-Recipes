@@ -1,0 +1,866 @@
+<!-- To do
+- change the orientation of the mainpage button, place it above the image, only done in hummus
+- the text in card with no image is centered is stead of bottom aligned -> change css. maybe just simplyfy by making the card itself make the alignment!
+- adjust the search bar so you can also use tags, adjust the tags 
+- add recipes 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Recipes</title>
+  <link rel="stylesheet" href="Style2.css">
+</head>
+
+
+
+
+<!-- Mainpage recipes html-->
+<body>
+  <header class="site-header">
+    <h1>My Recipes</h1>
+    <p>My personal collection of favorite dishes ♡</p>
+  </header>
+
+
+  <!-- Quick Navigation system -->
+  <section class="quick-nav">
+    <a href="#apero" class="nav-button">Apero</a>
+    <a href="#breakfast" class="nav-button">Breakfast</a>
+    <a href="#dinner" class="nav-button">Dinner</a>
+    <a href="#dessert" class="nav-button">Dessert</a>
+    <a href="#dressing" class="nav-button">Dressing</a>
+    <a href="#juices" class="nav-button">Juices</a>
+    <a href="#lunch" class="nav-button">Lunch</a>
+    <a href="#marinade" class="nav-button">Marinade</a>
+    <a href="#sauce" class="nav-button">Sauces & Pastes</a>
+  </section>
+
+ 
+
+  <!-- Section for ingredient search input-->
+  <section class="search-area container">
+    <label for="ingredient-search">Search by ingredient</label>
+    <input
+      type="search"
+      id="ingredient-search"
+      placeholder="Try: garlic, tomato, chickpea..."
+    >
+  </section>
+
+
+
+
+
+
+
+  <!-- Section for breakfast recipes -->
+  <main class="container">
+
+    <section class="recipe-section" id="breakfast">
+      <h2>Breakfast</h2>
+      <div class="recipe-grid">
+
+        <!-- Card #1  -->
+        <article class="recipe-card has-image"
+          data-title="Tofu Scramble with Spinach"
+          data-category="Breakfast"
+          data-ingredients="tofu, spinach, onion, garlic, tomato paste, soy sauce, turmeric, bread, paprika powder, olive oil, salt and pepper"
+          data-tags="breakfast, lunch">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept19-scrabledTofu.png" alt="Tofu scramble with spinach">
+          </div>
+          <div class="card-content">
+            <h3>Tofu Scramble with Spinach</h3>
+            <p>A fluffy tofu scramble with spinach, onion, garlic, and spices.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept19-ScrableTofu.html#from=breakfast">Open recipe</a>
+        </article>
+
+        <!-- Card #2  -->
+        <article class="recipe-card"
+          data-title="Fruit Salad"
+          data-category="Breakfast"
+          data-ingredients="blueberry, strawberry, raspberry, pomegranate, apple, mango, mint"
+          data-tags="breakfast, lunch">
+
+          <div class="card-content">
+         <!-- <span class="recipe-chip">breakfast</span>-->
+            <h3>Fruit Salad</h3>
+            <p>The best fruitsalad full of fresh and colorful fruits and mint.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept20-FruitSalade.html#from=breakfast">Open recipe</a>
+        </article>
+
+        <!-- Card #3  -->
+        <article class="recipe-card has-image"
+          data-title="Blueberry Muffins"
+          data-category="Breakfast"
+          data-ingredients="chia seeds, almond flour, oat flour, baking powder, baking soda, salt, ripe banana, plant-based milk, maple syrup, vanilla extract, blueberries"
+          data-tags="breakfast, lunch">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept30-BlueBerryMuffin.png" alt="Blueberry muffins">
+          </div>
+          <div class="card-content">
+            <h3>Blueberry Muffins</h3>
+            <p>Moist and delicious blueberry muffins made with chia seeds and plant-based milk.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept30-BlueberryMuffin.html#from=breakfast">Open recipe</a>
+        </article>
+
+        <!-- Card #4  -->
+        <article class="recipe-card"
+          data-title="Fluffy Spelt Pancakes"
+          data-category="Breakfast"
+          data-ingredients="spelt flour, coconut blossom sugar, baking powder, almond milk, plant-based oil, salt, baking soda, apple cider vinegar"
+          data-tags="breakfast, vegan, pancakes">
+
+          <div class="card-content">
+            <h3>Fluffy Spelt Pancakes</h3>
+            <p>Light, fluffy spelt pancakes made with whole spelt flour, almond milk, coconut blossom sugar, baking powder, plant-based oil, baking soda, and apple cider vinegar.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept31-VeganPancakes.html#from=breakfast">Open recipe</a>
+        </article>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Section for lunch recipes  -->
+    <section class="recipe-section" id="lunch">
+      <h2>Lunch</h2>
+      <div class="recipe-grid">
+
+        <!-- Card #1  -->
+        <article class="recipe-card has-image"
+          data-title="Tomato and Basil Puff Pastry Tart"
+          data-category="lunch"
+          data-ingredients="puff pastry, colored cherry tomatoes, shallot, garlic, olive oil, basil, pine nuts"
+          data-tags="snack, lunch, apero, easy">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept18-TomatoBasil.png" alt="Tomato and basil puff pastry tart">
+          </div>
+          <div class="card-content">
+            <h3>Tomato and Basil Puff Pastry Tart</h3>
+            <p>A simple and flavorful puff pastry tart with sweet cherry tomatoes, basil, shallot, garlic, and toasted pine nuts.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept18-TomatoBasil.html#from=lunch">Open recipe</a>
+        </article>
+
+        <!-- Card #2  -->
+        <article class="recipe-card has-image"
+          data-title="Tofu Scramble with Spinach on toast"
+          data-category="lunch"
+          data-ingredients="tofu, spinach, onion, garlic, tomato paste, soy sauce, turmeric, bread, paprika powder, olive oil, salt and pepper"
+          data-tags="breakfast, lunch">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept19-scrabledTofu.png" alt="Tofu scramble with spinach on toast">
+          </div>
+          <div class="card-content">
+            <h3>Tofu Scramble with Spinach</h3>
+            <p>A fluffy tofu scramble with spinach, onion, garlic, and spices.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept19-ScrableTofu.html#from=lunch">Open recipe</a>
+        </article>
+
+        <!-- Card #3  -->
+        <article class="recipe-card has-image"
+          data-title="Sabich - Roasted Eggplant Hummus Pitas"
+          data-category="lunch"
+          data-ingredients="pita bread, eggplant, hummus, tahini, cucumber, tomato, parsley, lemon juice, garlic, olive oil"
+          data-tags="breakfast, lunch">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept32-Sabich.png" alt="Sabich">
+          </div>
+          <div class="card-content">
+            <h3>Sabich</h3>
+            <p>Sabich, a traditional Iraqi Jewish dish with roasted eggplant and hummus in warm pita bread.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept32-Sabich.html#from=lunch">Open recipe</a>
+        </article>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Section for dinner recipes  -->
+    <section class="recipe-section" id="dinner">
+      <h2>Dinner</h2>
+      <div class="recipe-grid">
+
+        <!-- Card #1  -->
+        <article class="recipe-card has-image"
+          data-title="Stuffed Peppers With Falafel"
+          data-category="Dinner"
+          data-ingredients="bell peppers, quinoa, fennel, oranges, mandarins, cucumber, capers, spring onions, mint, falafel, baby spinach, olive oil, hummus"
+          data-tags="vegan, dinner">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept1-gevuldepaprika.png" alt="Stuffed peppers with falafel">
+          </div>
+          <div class="card-content">
+            <h3>Stuffed Peppers With Falafel</h3>
+            <p>Healthy stuffed peppers with quinoa, orange, and falafel, a light but filling lunch or party dish.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept1-stuffedpaprika.html#from=dinner">Open recipe</a>
+        </article>
+
+        <!-- Card #2  -->
+        <article class="recipe-card has-image"
+          data-title="Green Curry"
+          data-category="Dinner"
+          data-ingredients="white onion, garlic, fresh ginger, fresh coriander, green chili pepper, peas, spring onion, coconut milk, broccoli, green asparagus, snow peas, red chili pepper, lime, fresh basil, bell peppers, zucchini"
+          data-tags="vegan, dinner">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept12-GroeneCurry.png" alt="Green curry">
+          </div>
+          <div class="card-content">
+            <h3>Green Curry</h3>
+            <p>Creamy vegan green curry with coconut milk, fresh herbs, broccoli, peas, and asparagus.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept12-GreenCurry.html#from=dinner">Open recipe</a>
+        </article>
+
+        <!-- Card #3  --> 
+        <article class="recipe-card has-image"
+          data-title="Msakaa"
+          data-category="Dinner"
+          data-ingredients="tomatoes, onion, aubergine, garlic, chickpeas, naan bread, hummus, spices"
+          data-tags="vegan, dinner">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept13-Msakaa.png" alt="Msakaa">
+          </div>
+          <div class="card-content">
+            <h3>Msakaa</h3>
+            <p>Soft aubergine and chickpeas cooked in a rich tomato sauce with onion, garlic, and warm spices.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept13-Msakaa.html#from=dinner">Open recipe</a>
+        </article>
+
+        <!-- Card #4  -->
+        <article class="recipe-card has-image"
+          data-title="Pad Thai"
+          data-category="Dinner"
+          data-ingredients="broccoli, red bell pepper, tofu, peanuts, coriander, spring onion, garlic, noodles"
+          data-tags="vegan, dinner">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept15-PadThai.png" alt="Pad Thai">
+          </div>
+          <div class="card-content">
+            <h3>Pad Thai</h3>
+            <p>Sweet, salty, sour, and spicy Pad Thai with noodles, tofu, vegetables, peanuts, and a rich peanut-based sauce.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept15-PadThai.html#from=dinner">Open recipe</a>
+        </article>
+
+        <!-- Card #5  -->
+        <article class="recipe-card has-image"
+          data-title="Pumpkin Lasagne"
+          data-category="Dinner"
+          data-ingredients="carrot, bell pepper, zucchini, basil, Italian herbs, pumpkin, plant-based cheese, cashew nuts, tofu, nutritional yeast, garlic, lemon juice, water"
+          data-tags="vegan, dinner">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept16-PumpkinLasagna.png" alt="Pumpkin lasagne">
+          </div>
+          <div class="card-content">
+            <h3>Pumpkin Lasagne</h3>
+            <p>Layered pumpkin lasagne with vegetable slices, basil tomato sauce, Italian herbs, pumpkin leaves, and creamy cashew cheese sauce.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept16-PumpkinLasagne.html#from=dinner">Open recipe</a>
+        </article>
+
+        <!-- Card #6  -->
+        <article class="recipe-card"
+          data-title="Vegetable Chickpea Tagine"
+          data-category="Dinner"
+          data-ingredients="olive oil, onion, garlic, tomatoes, red bell pepper, diced tomatoes, water, fresh parsley, carrot, green peas, chickpeas, paprika powder, salt and pepper, turmeric, ras el hanout, ground ginger, pine nuts, parsley, coriander"
+          data-tags="vegan, dinner">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept17-VegetableChickpeaTajin.png" alt="Vegetable chickpea tagine">
+          </div>
+          <div class="card-content">
+            <h3>Vegetable Chickpea Tagine</h3>
+            <p>A warm and aromatic Moroccan-style vegetable tagine with chickpeas, spices, and fresh herbs.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept17-VegetableChickpeaTajin.html#from=dinner">Open recipe</a>
+        </article>
+
+        <!-- Card #7  -->
+        <article class="recipe-card has-image"
+          data-title="Sabich - Roasted Eggplant Hummus Pitas"
+          data-category="Dinner"
+          data-ingredients="pita bread, eggplant, hummus, tahini, cucumber, tomato, parsley, lemon juice, garlic, olive oil"
+          data-tags="breakfast, lunch">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept32-Sabich.png" alt="Sabich">
+          </div>
+          <div class="card-content">
+            <h3>Sabich</h3>
+            <p>Sabich, a traditional Iraqi Jewish dish with roasted eggplant and hummus in warm pita bread.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept32-Sabich.html#from=dinner">Open recipe</a>
+        </article>
+
+        <!-- Card #8  -->
+        <article class="recipe-card has-image"
+          data-title="Vegan Vol‑au‑vent"
+          data-category="Dinner"
+          data-ingredients="Beyond Sausage, chicken, chestnut mushrooms, puff pastry, onion, garlic, vegetable broth, plant-based cream, flour, olive oil, thyme, salt and pepper"
+          data-tags="vegan, dinner, comfort food">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept33-VVV.png" alt="Vegan vol-au-vent">
+          </div>
+          <div class="card-content">
+            <h3>Vegan Vol‑au‑vent</h3>
+            <p>A creamy vegan vol‑au‑vent filling with Beyond Sausage balls, plant‑based chicken, chestnut mushrooms, parsley, and a light nutmeg‑spiced béchamel‑style sauce.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept33-VVV.html#from=dinner">Open recipe</a>
+        </article>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    
+    <!-- Section for dessert recipes  -->
+    <section class="recipe-section" id="dessert">
+      <h2>Dessert</h2>
+      <div class="recipe-grid">
+
+        <!-- Card #1   -->
+        <article class="recipe-card "
+          data-title="Frambose Cava Sorbet"
+          data-category="Dessert"
+          data-ingredients="raspberry sorbet, cava, mint leaves, fresh strawberries, something crunchy"
+          data-tags="dressing, vegan, quick">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept34-FramboseCavaSorbet.png" alt="Frambose cava sorbet">
+          </div>
+          <div class="card-content">
+            <h3>Frambose Cava Sorbet</h3>
+            <p>A bright, sparkling raspberry sorbet made with raspberries, sparkling wine, strawberries, mint, and something crunchy.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept34-FramboseCavaSorbet.html#from=dessert">Open recipe</a>
+        </article>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Section for Juices recipes  -->
+    <section class="recipe-section" id="juices">
+      <h2>Juices</h2>
+      <div class="recipe-grid">
+
+        <!-- Card #1   -->
+        <article class="recipe-card"
+          data-title="Gingershots"
+          data-category="Juice"
+          data-ingredients="ginger, lemon, turmeric, blackpeper"
+          data-tags="vegan, juice, immunity">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept7-Gingershots.png" alt="Gingershots">
+          </div>
+          <div class="card-content">
+            <h3>Gingershots</h3>
+            <p>Immunity-boosting and awakening shots.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept7-Gingershots.html#from=juices">Open recipe</a>
+        </article>
+
+        <!-- Card #2   -->
+        <article class="recipe-card"
+          data-title="Beetroot-apple Juice"
+          data-category="Juice"
+          data-ingredients="beetroot, apple"
+          data-tags="vegan, juice, energy, endurance">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept8-BeetroodApple.png" alt="Beetroot apple juice">
+          </div>
+          <div class="card-content">
+            <h3>Beetroot-apple Juice</h3>
+            <p>Enhancing overall uptake and structural function.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept8-BeetroodApple.html#from=juices">Open recipe</a>
+        </article>
+
+        <!-- Card #3   -->
+        <article class="recipe-card"
+          data-title="Green Spice Juice"
+          data-category="Juice"
+          data-ingredients="lemon, fresh spinach, fresh parsley, celery, jalapeño peppers, tomatoes, salt"
+          data-tags="vegan, juice, detox">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept9-GreenSpicyJuice.png" alt="Green spice juice">
+          </div>
+          <div class="card-content">
+            <h3>Green Spice Juice</h3>
+            <p>Spicy green detox juice packed with leafy greens, celery, tomato, and a jalapeño kick.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept9-GreenSpicyJuice.html#from=juices">Open recipe</a>
+        </article>
+
+        <!-- Card #4   -->
+        <article class="recipe-card"
+          data-title="Carrot Ginger Juice"
+          data-category="Juice"
+          data-ingredients="carrot, ginger, orange, lemon"
+          data-tags="vegan, juice, immunity, vitamin">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept10-CarrotGinger.png" alt="Carrot ginger juice">
+          </div>
+          <div class="card-content">
+            <h3>Carrot Ginger Juice</h3>
+            <p>Immunity and vitamin boosting.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept10-CarrotGinger.html#from=juices">Open recipe</a>
+        </article>
+
+        <!-- Card #5   -->
+        <article class="recipe-card"
+          data-title="Detox Juice"
+          data-category="Juice"
+          data-ingredients="cucumber, celery, pineapple, lime, mint"
+          data-tags="vegan, juice, detox, hydration">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept11-DetoxJuice.png" alt="Detox juice">
+          </div>
+          <div class="card-content">
+            <h3>Detox Juice</h3>
+            <p>Cucumber, celery, and pineapple based detoxing and hydrating juice.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept11-DetoxJuice.html#from=juices">Open recipe</a>
+        </article>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Section for Apero recipes  -->
+    <section class="recipe-section" id="apero">
+      <h2>Apero</h2>
+      <div class="recipe-grid">
+
+        <!-- Card #1   -->
+        <article class="recipe-card has-image"
+          data-title="Classic Hummus"
+          data-category="apero"
+          data-ingredients="chickpeas, tahini, lemon, garlic, olive oil"
+          data-tags="dip, vegan, quick">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept2-hummus.png" alt="Classic hummus">
+          </div>
+          <div class="card-content">
+            <h3>Classic Hummus</h3>
+            <p>My favorite hummus recipes with variations.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept2-Hummus.html#from=apero">Open recipe</a>
+        </article>
+
+        <!-- Card #2   -->
+        <article class="recipe-card"
+          data-title="Green dip"
+          data-category="apero"
+          data-ingredients="avocado, lime, garlic, coriander, jalapeño pepper, water, olive oil, pistachios, salt, pepper, pine nuts"
+          data-tags="dip, vegan, quick">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept4-Greendip.png" alt="Green dip">
+          </div>
+          <div class="card-content">
+            <h3>Green dip</h3>
+            <p>Green dip recipe that is avocado based.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept4-Greendip.html#from=apero">Open recipe</a>
+        </article>
+
+        <!-- Card #3   -->
+        <article class="recipe-card has-image"
+          data-title="Red Pepper Dip"
+          data-category="Apero"
+          data-ingredients="olive oil, shallot, hot chili, garlic, sweet paprika, nutritional yeast, cashews, almonds, sunflower seeds, red pepper, water, lemon juice, tomato paste, white wine vinegar, dijon mustard, coconut, tamari"
+          data-tags="dip, vegan, spicy, quick">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept5-Redspicydip.png" alt="Red pepper dip">
+          </div>
+          <div class="card-content">
+            <h3>Red Pepper Dip</h3>
+            <p>Red pepper dip recipe that is roasted pepper based.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept5-RedPeperdip.html#from=apero">Open recipe</a>
+        </article>
+
+        <!-- Card #4   -->
+        <article class="recipe-card has-image"
+          data-title="Babaganouche"
+          data-category="apero"
+          data-ingredients="eggplant, tahini, lemon, cumin, garlic, coriander, pommegranate seeds, olive oil, salt"
+          data-tags="dip, vegan, quick">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept6-Babaganouch.png" alt="Babaganouche">
+          </div>
+          <div class="card-content">
+            <h3>Babaganouche</h3>
+            <p>Smoky roasted eggplant dip with tahini, lemon, cumin, garlic, and fresh coriander.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept6-Babaganouch.html#from=apero">Open recipe</a>
+        </article>
+
+        <!-- Card #5   -->
+        <article class="recipe-card has-image"
+          data-title="Guacamole"
+          data-category="apero"
+          data-ingredients="avocado, lime, garlic, coriander, chili pepper, shallot, olive oil"
+          data-tags="dip, vegan, quick">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept3-Guaca.png" alt="Guacamole">
+          </div>
+          <div class="card-content">
+            <h3>Guacamole</h3>
+            <p>The best guacamole recipe ever!</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept3-Guacamole.html#from=apero">Open recipe</a>
+        </article>
+
+        <!-- Card #6   -->
+        <article class="recipe-card has-image"
+          data-title="Kimchi Wontons"
+          data-category="apero"
+          data-ingredients="garlic, ginger, agave syrup, salt, tamari, soy sauce, spring onion, carrot, gochugaru, water, olive oil, cumin, artichoke, hazelnuts, wonton wrappers, coriander"
+          data-tags="snack, vegan, spicy">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept14-OvenWontons.png" alt="Kimchi wontons">
+          </div>
+          <div class="card-content">
+            <h3>Kimchi Wontons</h3>
+            <p>Crispy oven-baked wontons filled with Jerusalem artichoke-hazelnut puree and served with spicy kimchi dipping sauce.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept14-KimchiWontons.html#from=apero">Open recipe</a>
+        </article>
+
+        <!-- Card #7   -->
+        <article class="recipe-card has-image"
+          data-title="Tomato and Basil Puff Pastry Tart"
+          data-category="apero"
+          data-ingredients="puff pastry, colored cherry tomatoes, shallot, garlic, olive oil, basil, pine nuts"
+          data-tags="snack, vegan, spicy">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept18-TomatoBasil.png" alt="Tomato and basil puff pastry tart">
+          </div>
+          <div class="card-content">
+            <h3>Tomato and Basil Puff Pastry Tart</h3>
+            <p>A simple and flavorful puff pastry tart with sweet cherry tomatoes, basil, shallot, garlic, and toasted pine nuts.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept18-TomatoBasil.html#from=apero">Open recipe</a>
+        </article>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Section for Dressing recipes  -->
+    <section class="recipe-section" id="dressing">
+      <h2>Dressing</h2>
+      <div class="recipe-grid">
+
+        <!-- Card #1  -->
+        <article class="recipe-card"
+          data-title="Avocado with Rice Vinegar Dressing"
+          data-category="Dressing"
+          data-ingredients="avocado, rice vinegar, olive oil, salt, pepper"
+          data-tags="dressing, vegan, quick">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept21-AvoDres.png" alt="Avocado with rice vinegar dressing">
+          </div>
+          <div class="card-content">
+            <h3>Avocado with Rice Vinegar Dressing</h3>
+            <p>A simple and healthy dressing made with ripe avocado, rice vinegar, and olive oil.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept21-AvoDres.html#from=dressing">Open recipe</a>
+        </article>
+
+        <!-- Card #2  -->
+        <article class="recipe-card"
+          data-title="Tahini Lemon Dressing"
+          data-category="Dressing"
+          data-ingredients="lemon, tahini, water, salt, pepper"
+          data-tags="dressing, vegan, quick">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept22-TahiniDres.png" alt="Tahini lemon dressing">
+          </div>
+          <div class="card-content">
+            <h3>Tahini Lemon Dressing</h3>
+            <p>Easiest and most delicious!</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept22-TahiniDres.html#from=dressing">Open recipe</a>
+        </article>
+
+        <!-- Card #3  -->
+        <article class="recipe-card"
+          data-title="White Wine Vinaigrette"
+          data-category="Dressing"
+          data-ingredients="white wine vinegar, water, mustard, plant-based oil, agave syrup, salt, pepper"
+          data-tags="dressing, vegan, quick">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept23-WhiteWineDres.png" alt="White wine vinaigrette">
+          </div>
+          <div class="card-content">
+            <h3>White Wine Vinaigrette</h3>
+            <p>A light and balanced vinaigrette made with white wine vinegar, mustard, and oil.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept23-WhiteWineDres.html#from=dressing">Open recipe</a>
+        </article>
+
+        <!-- Card #4  -->
+        <article class="recipe-card"
+          data-title="Tomato Basil Vinaigrette"
+          data-category="Dressing"
+          data-ingredients="cherry tomatoes, olive oil, basil, red wine vinegar, shallot, salt, pepper"
+          data-tags="dressing, vegan, quick">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept24-TomateDres.png" alt="Tomato basil vinaigrette">
+          </div>
+          <div class="card-content">
+            <h3>Tomato Basil Vinaigrette</h3>
+            <p>A light and balanced vinaigrette made with cherry tomatoes, olive oil, and basil.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept24-TomateDres.html#from=dressing">Open recipe</a>
+        </article>
+
+        <!-- Card #5  -->
+        <article class="recipe-card"
+          data-title="Basilamic Mustard Vinaigrette"
+          data-category="Dressing"
+          data-ingredients="balsamic vinegar, mustard, plant-based oil, agave syrup, salt, pepper"
+          data-tags="dressing, vegan, quick">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept25-BalsamicDres.png" alt="Balsamic mustard vinaigrette">
+          </div>
+          <div class="card-content">
+            <h3>Basilamic Mustard Vinaigrette</h3>
+            <p>A light and balanced vinaigrette made with balsamic vinegar, mustard, and plant-based oil.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept25-BalsamicDres.html#from=dressing">Open recipe</a>
+        </article>
+
+        <!-- Card #6  -->
+        <article class="recipe-card"
+          data-title="Mango Lime Mustard Dressing"
+          data-category="Dressing"
+          data-ingredients="mango, lime, mustard, plant-based oil, agave syrup, salt, pepper"
+          data-tags="dressing, vegan, quick">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept26-MangoLimeDres.png" alt="Mango lime mustard dressing">
+          </div>
+          <div class="card-content">
+            <h3>Mango Lime Mustard Dressing</h3>
+            <p>A light and balanced dressing made with mango, lime, mustard, and plant-based oil.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept26-MangoLimeDres.html#from=dressing">Open recipe</a>
+        </article>
+
+        <!-- Card #7  -->
+        <article class="recipe-card"
+          data-title="Ginger Soy Dressing"
+          data-category="Dressing"
+          data-ingredients="ginger, soy sauce, sesame oil, white wine vinegar, agave syrup, salt, pepper"
+          data-tags="dressing, vegan, quick">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept28-GingerSoyDres.png" alt="Ginger soy dressing">
+          </div>
+          <div class="card-content">
+            <h3>Ginger Soy Dressing</h3>
+            <p>A light and balanced dressing made with ginger, soy sauce, sesame oil, and white wine vinegar.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept28-GingerSoyDres.html#from=dressing">Open recipe</a>
+        </article>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Section for Marinade recipes -->
+    <section class="recipe-section" id="marinade">
+      <h2>Marinade</h2>
+      <div class="recipe-grid">
+
+        <!-- Card #1  -->
+        <article class="recipe-card"
+          data-title="Spicy Sesame Garlic Marinade"
+          data-category="Dressing"
+          data-ingredients="soy sauce, sesame oil, garlic, ginger, agave syrup, rice vinegar, chili paste"
+          data-tags="dressing, vegan, quick">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept27-SpiceSoySaus.png" alt="Spicy sesame garlic marinade">
+          </div>
+          <div class="card-content">
+            <h3>Spicy Sesame Garlic Marinade</h3>
+            <p>An easy and tasty marinade for tofu or vegetables.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept27-SpiceSoySaus.html#from=marinade">Open recipe</a>
+        </article>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Section for Sauces and Pastes -->
+    <section class="recipe-section" id="sauce">
+      <h2>Sauces and Pastes</h2>
+      <div class="recipe-grid">
+        <!-- Card #1  -->
+        <article class="recipe-card has-image"
+          data-title="Curry Paste"
+          data-category="Paste"
+          data-ingredients="garlic, ginger, coriander, cumin, turmeric, chili powder, paprika powder, salt, pepper, olive oil, chilli"
+          data-tags="dressing, vegan, quick">
+          <div class="card-image-wrap">
+            <img src="Recipes/Pictures/Recept29-CurryPaste.png" alt="Curry paste">
+          </div>
+          <div class="card-content">
+            <h3>Curry Paste</h3>
+            <p>A fragrant curry paste with coriander, cumin, fresh cilantro, chili peppers, shallot, galangal, soy sauce, turmeric, lime, and lemongrass.</p>
+          </div>
+          <a class="button-link" href="Recipes/Recept29-CurryPaste.html#from=sauce">Open recipe</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Trying to sort the recipes in alphabetical order - JavaScript - STILL A BUG IN -> FiXED :)) -->
+<script> //opens JavaScript block 
+document.addEventListener("DOMContentLoaded", function () { // Wait for the DOM(HTML file) to be fully loaded before running the sorting code
+  document.querySelectorAll(".recipe-grid").forEach(grid => { // Select all elements (in class "recipe-grid") and loops through each one
+    const cards = Array.from(grid.querySelectorAll(".recipe-card")); // Within grid, select all recipe cards and convert the NodeList to an array for sorting
+
+    cards.sort((a, b) => { // Sort the cards based on the recipe titles (h3 element within each card)
+      const titleA = a.querySelector("h3")?.textContent.trim() || ""; // Get the title of the recipe from the h3 element, trim whitespace, and use an empty string if not found to avoid errors
+      const titleB = b.querySelector("h3")?.textContent.trim() || ""; // Get the title of the recipe from the h3 element, trim whitespace, and use an empty string if not found to avoid errors
+      return titleA.localeCompare(titleB);
+    });
+
+    cards.forEach(card => grid.appendChild(card)); // Re-append the sorted cards to the grid, that have been rearranged in the DOM based on the sorted order (alphabetically)
+  });
+});
+</script>
+
+
+<!-- Trying to add a search function for the recipes - JavaScript --> 
+  <script>
+    // Running the search function after the DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", () => { // Wait for the DOM(HTML file) to be fully loaded before running the search code
+      const searchInput = document.getElementById("ingredient-search");
+      const cards = document.querySelectorAll(".recipe-card");// Select all recipe cards to be filtered based on the search input
+
+      // add check for when ID is empty or not found, to avoid errors
+      if (!searchInput) return;
+
+      searchInput.addEventListener("input", () => {
+        const query = searchInput.value.toLowerCase().trim(); // Get the search query, convert it to lowercase, and trim whitespace for case-insensitive matching
+
+        cards.forEach(card => {
+          const textToSearch = [
+            card.dataset.title,
+            card.dataset.category,
+            card.dataset.ingredients,
+            card.dataset.tags
+          ]
+            .filter(Boolean) // Filter out any undefined or empty values to avoid errors
+            .join(" ")
+            .toLowerCase();
+
+          card.style.display = textToSearch.includes(query) ? "" : "none"; // Show the card if the search query is found in the title, category, ingredients, or tags; otherwise, hide it
+        });
+      });
+    });
+  </script>
+
+
+   <!-- making sure it scrolls more smoothly -->
+<script>
+ window.addEventListener("load", () => {
+  const id = window.location.hash.substring(1);
+
+  if (id) {
+    const element = document.getElementById(id);
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  }
+});
+</script>
+
+</body>
+</html>

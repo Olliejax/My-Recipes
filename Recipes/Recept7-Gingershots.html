@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gingershots</title>
+</head>
+<link rel="stylesheet" href="../Style2.css" />  
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Gingershots</h1>
+
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Gingershots</td></tr>
+          <tr><th>Tags</th><td><code>juice</code>, <code>immunity</code>, <code>detox</code>, <code>anti-inflammatory</code></td></tr>
+          <tr><th>Date</th><td><code>2026-04-10</code></td></tr>
+          <tr><th>Personal Score</th><td>10 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>Potent immunity-boosting gingershots combining fresh turmeric, lemon, ginger and black pepper for the absorption of turmeric.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 60 min</li>
+        <li>🍳 Cook time: 0 min</li>
+        <li>🍽️ Yield: 4 bottles</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>3 kg lemons</li>
+        <li>1.28 kg fresh turmeric root (320g per bottle × 4)</li>
+        <li>2-3 knobs black pepper</li>
+        <li>rest ginger</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Wash lemons and turmeric thoroughly. </li>
+        <li>Chop lemons and turmeric into juicer-sized pieces.</li>
+        <li>Run all lemons, turmeric, and black pepper through centrifugal juicer.</li>
+        <li>Strain the juice through a fine mesh sieve and place into sterilized bottles.</li>
+        <li>Store refrigerated and shake before each use.</li>
+      </ol>
+
+      <h2>Nutritional Benefits</h2>
+    <table class="nutritional-table">
+        <thead>
+    <tr>
+      <th>Ingredient</th>
+      <th>Vitamin/Compound</th>
+      <th>Scientific Role</th>
+      <th>Real Life Benefit</th>
+    </tr>
+  </thead>
+        <tbody>
+          <tr><td>Lemon</td><td>Vitamin C (Ascorbic Acid)</td><td>Cofactor in collagen synthesis (prolyl/lysyl hydroxylase), L-carnitine production, catecholamine biosynthesis. Maintains endothelial integrity and modulates E-rosette formation in lymphocytes.</td><td>Strong skin, healthy blood vessels, faster wound healing</td></tr>
+          <tr><td>Lemon</td><td>Potassium (K⁺)</td><td>Regulates membrane potential, Na⁺/K⁺-ATPase activity, maintains extracellular fluid osmolarity. Critical for repolarization phase of cardiac action potential.</td><td>Normal blood pressure, muscle/nerve function</td></tr>
+          <tr><td>Ginger</td><td>6-Gingerol</td><td>TRPV1 agonist ↑gastric emptying via cholinergic pathways. Nrf2-ARE activation ↑SOD/catalase/GPx. Inhibits COX-2/PGE2, ↓NF-κB translocation, ↓TNF-α/IL-6 cascade.</td><td>Reduces inflammation/pain, better digestion, immune support</td></tr>
+          <tr><td>Ginger</td><td>6-Shogaol</td><td>PPAR-γ agonist, p38/HO-1 pathway activation. ↓ROS-induced lipid peroxidation. Neuroprotective via BDNF ↑ and amyloid-β aggregation ↓.</td><td>Brain protection, antioxidant defense, less muscle soreness</td></tr>
+          <tr><td>Turmeric</td><td>Curcuminoids</td><td>Modulates NF-κB signaling, inhibits COX-2/PGE2 pathways, scavenges peroxynitrite radicals. ↑ Bioavailability 2000% w/piperine via glucuronidation inhibition.</td><td>Strong anti-inflammatory, joint health, antioxidant protection</td></tr>
+          <tr><td>Turmeric</td><td>Gingerols (6-gingerol)</td><td>TRPV1 agonist, 5-LOX inhibitor, ↑ gastric motility via cholinergic pathways. Antioxidant via Nrf2-ARE activation.</td><td>Strong anti-inflammatory, joint health, antioxidant protection</td></tr>
+          <tr><td>Black Pepper</td><td>Piperine</td><td>Inhibits CYP3A4/P-gp, ↓UGT glucuronidation of curcumin (20-fold ↑ plasma levels). ↑ thermogenesis via catecholamine secretion.</td><td>Makes turmeric 20x more effective in your body</td></tr>
+      </table>
+
+    </section>
+  </main>
+</body>
+</html>

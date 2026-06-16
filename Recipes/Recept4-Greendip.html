@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Dip</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+       <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Green Dip</h1>
+
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Green Dip</td></tr>
+          <tr><th>Tags</th><td><code>snack</code>, <code>apero</code></td></tr>
+          <tr><th>Date</th><td><code>2026-04-10</code></td></tr>
+          <tr><th>Personal Score</th><td>7,5 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>Creamy green dip made with avocado, coriander, jalapeño, lime, and topped with pine nuts. Perfect for crackers, veggies, or as a sandwich spread.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 10 min</li>
+        <li>🍳 Cook time: 0 min</li>
+        <li>🍽️ Servings: 4</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1 avocado</li>
+        <li>1 lime (juice)</li>
+        <li>2 garlic clove</li>
+        <li>Fresh coriander</li>
+        <li>½ jalapeño pepper</li>
+        <li>Water (as needed)</li>
+        <li>Olive oil</li>
+        <li>Pistachios</li>
+        <li>Salt and pepper</li>
+        <li><strong>Topping:</strong> pine nuts</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Scoop the avocado flesh into a blender or food processor.</li>
+        <li>Add lime juice, garlic clove, fresh coriander, half jalapeño, a splash of water, and olive oil.</li>
+        <li>Blend until smooth, adding more water if needed to reach desired consistency.</li>
+        <li>Add pistachios, salt, and pepper, then blend briefly to incorporate.</li>
+        <li>Taste and adjust seasoning or spice level as needed.</li>
+        <li>Transfer to a bowl and sprinkle pine nuts on top before serving.</li>
+      </ol>
+
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tahini Lemon Dressing</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Tahini Lemon Dressing</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Tahini Lemon Dressing</td></tr>
+          <tr><th>Tags</th><td><code>dressing</code>, <code>quick</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>A creamy, tangy tahini dressing made with lemon, tahini, water, salt, and pepper, perfect for salads, bowls, or as a dip.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 3 min</li>
+        <li>🍳 Cook time: 0 min</li>
+        <li>🍽️ Servings: about 4 (dressing)</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>Juice of 1 lemon</li>
+        <li>3 tablespoons tahini</li>
+        <li>3–4 tablespoons water</li>
+        <li>Pepper to taste</li>
+        <li>Pinch of salt</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Squeeze the lemon to get fresh lemon juice and add it to a small bowl.</li>
+        <li>Add the tahini and whisk until the mixture thickens and the tahini loosens.</li>
+        <li>Gradually add the water, a tablespoon at a time, whisking well after each addition until the dressing reaches your preferred consistency.</li>
+        <li>Season with a pinch of salt and freshly ground pepper, then taste and adjust; add more lemon juice for extra tang or a bit more water if it’s too thick.</li>
+      </ol>
+
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

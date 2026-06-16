@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detox Juice (1L)</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Detox Juice </h1>
+
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Detox Juice</td></tr>
+          <tr><th>Tags</th><td> <code>juice</code>, <code>detox</code>, <code>hydration</code></td></tr>
+          <tr><th>Date</th><td><code>2026-04-10</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>Refreshing tropical detox juice with cucumber, celery, lime, pineapple and mint. Ultra-hydrating with digestive enzymes.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 30 min</li>
+        <li>🍳 Cook time: 0 min</li>
+        <li>🍽️ Yield: 1 liter (1 bottle)</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>2 large cucumbers</li>
+        <li>6 stalks celery</li>
+        <li>4 limes</li>
+        <li>½ medium pineapple (alternating for best yield)</li>
+        <li>Handful fresh mint leaves (20g)</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Wash all ingredients thoroughly under cold water.</li>
+        <li>chop everything into juicer-sized pieces.</li>
+        <li>Juice limes, cucumbers, celery, and pineapple (alternating for best yield).</li>
+        <li>Add fresh mint leaves through juicer last.</li>
+        <li>Stir well, pour into 1L bottle, and refrigerate. Shake before drinking.</li>
+      </ol>
+
+      <h2>Nutritional Benefits</h2>
+      <table class="nutritional-table">
+        <thead>
+          <tr>
+            <th>Ingredient</th>
+            <th>Vitamin/Compound</th>
+            <th>Scientific Role</th>
+            <th>Real Life Benefit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cucumber</td>
+            <td>Potassium</td>
+            <td>Na⁺/K⁺-ATPase pump regulation, extracellular fluid balance</td>
+            <td>Deep hydration, electrolyte balance</td>
+          </tr>
+          <tr>
+            <td>Cucumber</td>
+            <td>Cucurbitacins</td>
+            <td>CYP450 modulation, phase II detox enzyme induction</td>
+            <td>Liver detox support</td>
+          </tr>
+          <tr>
+            <td>Celery</td>
+            <td>3-n-butylphthalide</td>
+            <td>↓Vascular smooth muscle tone, ↑ACh release</td>
+            <td>Calms nerves, lowers blood pressure</td>
+          </tr>
+          <tr>
+            <td>Celery</td>
+            <td>Apigenin</td>
+            <td>GABA-A receptor modulation, ↓cortisol</td>
+            <td>Reduces stress, promotes relaxation</td>
+          </tr>
+          <tr>
+            <td>Pineapple</td>
+            <td>Bromelain</td>
+            <td>Proteolytic enzyme, fibrinolytic activity</td>
+            <td>Digestion aid, reduces swelling</td>
+          </tr>
+          <tr>
+            <td>Pineapple</td>
+            <td>Vitamin C</td>
+            <td>Collagen synthesis cofactor, antioxidant recycling</td>
+            <td>Healthy skin, immune support</td>
+          </tr>
+          <tr>
+            <td>Lime</td>
+            <td>Limonoids</td>
+            <td>CYP3A4 induction, phase I detox acceleration</td>
+            <td>Liver cleansing support</td>
+          </tr>
+          <tr>
+            <td>Mint</td>
+            <td>Menthol</td>
+            <td>TRPM8 agonism, ↑bile flow, antispasmodic</td>
+            <td>Soothing digestion, fresh breath</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+  </main>
+</body>
+</html>

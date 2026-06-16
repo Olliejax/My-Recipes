@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tomato and Basil Puff Pastry Tart</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="./Pictures/Recept18-TomatoBasil.png" alt="Tomato and basil puff pastry tart" />
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Tomato and Basil Puff Pastry Tart</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Tomato and Basil Puff Pastry Tart</td></tr>
+          <tr><th>Tags</th><td> <code>lunch</code>, <code>apero</code> <code>snack</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td> Cha ☺︎</td></tr>
+          </td></tr>
+        </tbody>
+      </table>
+
+      <p>A simple and flavorful puff pastry tart with sweet cherry tomatoes, basil, shallot, garlic, and toasted pine nuts.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 15 min</li>
+        <li>🍳 Cook time: 25 min</li>
+        <li>🍽️ Servings: 4</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1 sheet puff pastry</li>
+        <li>Colored cherry tomatoes</li>
+        <li>1 shallot</li>
+        <li>2 cloves garlic</li>
+        <li>Olive oil</li>
+        <li>Fresh basil</li>
+        <li>Pine nuts</li>
+        <li>Salt and pepper</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Preheat the oven to 200°C (390°F).</li>
+        <li>Roll out the puff pastry on a baking tray lined with parchment paper.</li>
+        <li>Thinly slice the shallot and garlic, and halve the cherry tomatoes.</li>
+        <li>Spread the shallot and garlic over the puff pastry, then add the tomatoes on top.</li>
+        <li>Drizzle with olive oil and season with salt and pepper.</li>
+        <li>Bake for 20 to 25 minutes, until the pastry is golden and crisp.</li>
+        <li>Remove from the oven and top with fresh basil leaves and toasted pine nuts.</li>
+        <li>Serve warm or at room temperature.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thai‑Inspired Spice Paste</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="./Pictures/Recept29-CurryPaste.png" alt="Thai‑inspired spice paste in a bowl" />
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Thai‑Inspired Spice Paste</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Thai‑Inspired Spice Paste</td></tr>
+          <tr><th>Tags</th><td><code>paste</code>, <code>vegan</code>, <code>asian</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>A fragrant Thai‑style spice paste with coriander, cumin, fresh cilantro, chili peppers, shallot, galangal, soy sauce, turmeric, lime, and lemongrass.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 10 min</li>
+        <li>🍳 Cook time: 0 min (ready to use)</li>
+        <li>🍽️ Servings: about 4 portions (paste base)</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1 teaspoon ground coriander</li>
+        <li>1 teaspoon ground cumin</li>
+        <li>2 handfuls fresh cilantro / coriander leaves</li>
+        <li>4 fresh chili peppers (adjust to taste)</li>
+        <li>2 shallots</li>
+        <li>2 teaspoons galangal / Thai ginger, finely grated</li>
+        <li>2 teaspoons soy sauce</li>
+        <li>2 teaspoons turmeric powder</li>
+        <li>Salt to taste</li>
+        <li>Juice and zest of 1 lime</li>
+        <li>3 stalks lemongrass, white part only, finely chopped</li>
+        <li>1–2 tablespoons water or oil (optional, for desired consistency)</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Wash and roughly chop the chili peppers, shallots, and lemongrass; remove the majority of the seeds if you prefer less heat.</li>
+        <li>In a food processor or mortar and pestle, combine the chopped chili peppers, shallots, lemongrass, grated galangal, ground coriander, cumin, and turmeric.</li>
+        <li>Blend or pound into a coarse paste, adding a small splash of water or a bit of oil if needed to help it come together.</li>
+        <li>Add the soy sauce, lime juice, lime zest, and salt, then blend again until the mixture is smooth and the flavors are well integrated.</li>
+        <li>Stir in the fresh cilantro and pulse briefly so the herbs are finely chopped but not totally destroyed.</li>
+        <li>Taste and adjust seasoning: add more salt, soy sauce, turmeric, or chili according to your preference.</li>
+        <li>Transfer the paste to a jar and store in the fridge for up to a week, or divide into portions and freeze for later use.</li>
+        <li>Use as a base for curries, stir‑fries, noodle sauces, or marinades for tofu, tempeh, or vegetables.</li>
+      </ol>
+
+    </section>
+  </main>
+</body>
+</html>

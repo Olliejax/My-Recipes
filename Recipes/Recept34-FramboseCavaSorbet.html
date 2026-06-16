@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raspberry Cava Sorbet</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+    <section class="content">
+      <h1>Raspberry Cava Sorbet</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Raspberry Cava Sorbet</td></tr>
+          <tr><th>Tags</th><td><code>dessert</code>, <code>summer</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Murni and adjusted by me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>A bright, sparkling raspberry sorbet made with raspberries, sparkling wine (cava), strawberries, mint, and served with a crunchy chocolate‑flavored biscuit.</p>
+
+      <ul class="meta">
+       <li>⏲️ Prep time: 10 min</li>
+        <li>🧊 Freezing time: 4–6 h</li>
+        <li>🍽️ Servings: 4</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      
+        <strong>Total recipe</strong>
+        <ul>
+        <li> 1 or 2 scoops rasbarry Sorbet (made or bought)</li>
+        <li>a splash of cava</li>
+        <li> mint leaves</li>
+        <li>fresh strawberries, sliced (optional)</li>
+        <li> something crunchy (optional)</li>
+      </ul>
+
+    
+        <strong>For the sorbet:</strong> 
+        <ul>
+
+        <li>500 grams raspberries (fresh or frozen)</li>
+        <li>200 ml water</li>
+        <li>200 grams sugar</li>
+        <li>1 sheet of gelatin (or a vegan alternative like agar‑agar)</li>
+        <li>1 teaspoon lemon juice</li>
+
+      </ul>
+       
+      <h2>Directions</h2>
+      
+        <strong>Make the sorbet:</strong> 
+        
+        <ol>
+            <li>If you’re using frozen raspberries, take them out of the freezer about half an hour beforehand so they can thaw slightly.</li>
+            <li>Soak the gelatin sheet in cold water for about 5 minutes until it softens.</li>
+            <li>In a heavy-bottomed saucepan, combine the water and sugar. Heat over medium heat, stirring until the sugar has completely dissolved.</li>   
+            <li>Once the sugar has dissolved, squeeze out the excess water from the gelatin sheet and stir it into the hot sugar syrup until fully dissolved.</li>  
+            <li>Place the raspberries in a blender and gradually pour in the sugar syrup while blending until smooth.</li>
+            <li>Finally, stir in the lemon juice to brighten the flavor.</li>
+            <li>Pour the mixture into an ice cream maker and churn according to the manufacturer’s instructions, usually for about 30–50 minutes until it reaches a sorbet consistency.</li>
+         </ol>
+
+        
+        <strong>Assemble the sorbet:</strong> 
+            <ol>
+            <li>Slice the strawberries and mint in preferred sizes.</li>
+            <li>Scoop the sorbet in a bowl or glass.</li>
+            <li>Pour the cava over the sorbet.</li>
+            <li>Add the strawberries, mint, and crunch.</li>
+            </ol>
+
+    </section>
+  </main>
+</body>
+</html>

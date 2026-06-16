@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Spice Juice</title>
+  <link rel="stylesheet" href="../Style2.css " />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Green Spice Juice</h1>
+
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Green Spice Juice</td></tr>
+          <tr><th>Tags</th><td><code>juice</code>, <code>detox</code></td></tr>
+          <tr><th>Date</th><td><code>2026-04-10</code></td></tr>
+          <tr><th>Personal Score</th><td>8,5 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>Spicy green detox juice packed with leafy greens, celery, tomato and a jalapeno kick. Powerful cleansing and alkalizing blend.</p>
+
+ 
+      <ul class="meta">
+       <li>⏲️ Prep time: 30 min</li>
+        <li>🍳 Cook time: 0 min</li>
+        <li>🍽️ Yield: 1 liter (1 bottle)</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+       <li> 1 large lemon</li>
+        <li> 4 cups fresh spinach (large handful)</li>
+        <li> 8 sprigs fresh parsley</li>
+        <li> 8 stalks celery</li>
+        <li> 1¼ small jalapeño peppers (or 1 for mild)</li>
+        <li> 4 medium tomatoes</li>
+        <li> 1 tsp salt</li>
+        <li> 4 cups ice</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Wash all vegetables thoroughly under cold water.</li>
+        <li>Juice lemon, spinach, parsley, celery, jalapeño, and tomatoes in this order.</li>
+        <li>Stir in salt until dissolved.</li>
+        <li>Pour over ice in 1L bottle and shake well.</li>
+        <li>Store refrigerated, shake before drinking. Best within 48 hours.</li>
+      </ol>
+
+      <h2>Nutritional Benefits</h2>
+    <table class="nutritional-table">
+        <thead>
+    <tr>
+      <th>Ingredient</th>
+      <th>Vitamin/Compound</th>
+      <th>Scientific Role</th>
+      <th>Real Life Benefit</th>
+    </tr>
+  </thead>
+        <tbody>
+          <tr><td>Spinach</td><td>Vitamin K1</td><td>γ-carboxylation of Gla proteins, osteocalcin activation</td><td>Strong bones, healthy blood clotting</td></tr>
+          <tr><td>Spinach</td><td>Lutein/Zeaxanthin</td><td>Blue light filtration in macula, ROS quenching</td><td>Eye protection, better vision</td></tr>
+          <tr><td>Parsley</td><td>Vitamin C</td><td>Collagen hydroxylase cofactor, Fe²⁺ regeneration</td><td>Healthy skin, immune boost</td></tr>
+          <tr><td>Parsley</td><td>Apigenin</td><td>AR inhibition, ↓AGE formation, anti-glycation</td><td>Anti-aging, blood sugar support</td></tr>
+          <tr><td>Celery</td><td>3-n-butylphthalide</td><td>↓Muscle spasm, ↑ACh release, GABA modulation</td><td>Calms nerves, lowers blood pressure</td></tr>
+          <tr><td>Celery</td><td>Potassium</td><td>Na⁺/K⁺-ATPase regulation, fluid balance</td><td>Healthy blood pressure, hydration</td></tr>
+          <tr><td>Jalapeño</td><td>Capsaicinoids</td><td>TRPV1 agonism, ↑catecholamine release</td><td>Boosts metabolism, pain relief</td></tr>
+          <tr><td>Tomato</td><td>Lycopene</td><td>PPAR-γ activation, LDL oxidation ↓</td><td>Heart protection, prostate health</td></tr>
+          <tr><td>Lemon</td><td>Vitamin C</td><td>Antioxidant network, carnitine synthesis</td><td>Energy production, immune support</td></tr>
+        </tbody>
+      </table>
+
+    </section>
+  </main>
+</body>
+</html>

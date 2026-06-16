@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dish Title</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="caption">Dish Title</div>
+      <img src="./Pictures/brunch table for example in website.jpg" alt="Recipe" />
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Dish Title</h1>
+
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Dish Title</td></tr>
+          <tr><th>Tags</th><td><code>something</code>, <code>something</code>, <code>something</code></td></tr>
+          <tr><th>Date</th><td><code>2026-04-07</code></td></tr>
+          <tr><th>Personal Score</th><td>7,5 /10</td></tr>
+          <tr><th>Author</th><td></td></tr>
+        </tbody>
+      </table>
+
+      <p>brief description of the dish</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 10 min</li>
+        <li>🍳 Cook time: 30 min</li>
+        <li>🍽️ Servings: 4</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>ingredient 1</li>
+        <li>ingredient 2</li>
+        <li>ingredient 3</li>
+        <li>ingredient 4</li>
+        <li>ingredient 5</li>
+        <li>ingredient 6</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Step 1</li>
+        <li>Step 2</li>
+        <li>Do <strong>Step 3</strong> </li>
+        <li>Step 4</li>
+        <li>Step 5</li>
+        <li>Step 6</li>
+      </ol>
+
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tofu Scramble with Spinach</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="./Pictures/Recept19-scrabledTofu.png" alt="Tofu scramble with spinach" />
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Tofu Scramble with Spinach</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Tofu Scramble with Spinach</td></tr>
+          <tr><th>Tags</th><td><code>vegan</code>, <code>breakfast</code>, <code>lunch</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>A fluffy, savory tofu scramble with spinach, onion, garlic, and spices, served with basil, black olives, and sun‑dried tomatoes.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 10 min</li>
+        <li>🍳 Cook time: 15 min</li>
+        <li>🍽️ Servings: 2–3</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>300 grams firm tofu</li>
+        <li>100 grams fresh spinach</li>
+        <li>1 white onion</li>
+        <li>2 cloves garlic</li>
+        <li>2 tablespoons tomato paste</li>
+        <li>1 tablespoon soy sauce</li>
+        <li>0.5 teaspoon turmeric</li>
+        <li>0.5 teaspoon paprika powder</li>
+        <li>1 tablespoon olive oil</li>
+        <li>Salt and pepper to taste</li>
+        <li>Slice of bread</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Drain the tofu and press out excess liquid, then crumble it with a fork into small curds.</li>
+        <li>Heat the olive oil in a non‑stick frying pan over medium heat. Add the finely chopped onion and garlic, and cook until soft and fragrant.</li>
+        <li>Stir in the tomato paste and cook for 1–2 minutes so the flavor deepens.</li>
+        <li>Add the crumbled tofu to the pan and sprinkle with turmeric, paprika, salt, and pepper. Mix well so the tofu turns a rich yellow color.</li>
+        <li>Add the spinach and stir until it wilts into the scramble.</li>
+        <li>Cook for another 4–6 minutes, stirring occasionally, until the tofu is heated through and the mixture is slightly crispy in parts.</li>
+        <li>Taste and adjust seasoning with extra soy sauce, salt, or pepper if needed.</li>
+        <li>Plate the tofu scramble and finish with fresh basil, sliced black olives, and chopped sun‑dried tomatoes.</li>
+      </ol>
+
+      <h2>Serving suggestions</h2>
+      <ul>
+        <li>Enjoy with toast, tortilla, or a green salad.</li>
+        <li>Can be served for breakfast or as a light lunch.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

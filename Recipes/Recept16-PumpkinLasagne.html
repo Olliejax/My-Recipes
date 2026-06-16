@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pumpkin Lasagne</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="./Pictures/Recept16-PumpkinLasagna.png" alt="Vegan pumpkin lasagne with cashew cheese and fresh basil" />
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Pumpkin Lasagne</h1>
+
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Pumpkin Lasagne</td></tr>
+          <tr><th>Tags</th><td><code>vegan</code>, <code>dinner</code>, <code>lasagne</code>, <code>pumpkin</code></td></tr>
+          <tr><th>Date</th><td><code>2026-04-10</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>Layered pumpkin lasagne with vegetable slices, basil tomato sauce, Italian herbs, pumpkin leaves, and creamy cashew cheese sauce.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 30 min</li>
+        <li>🍳 Cook time: 40 min</li>
+        <li>🍽️ Servings: 6</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>Carrot slices</li>
+        <li>Bell pepper</li>
+        <li>Zucchini</li>
+        <li>Basil (for pasta sauce)</li>
+        <li>Italian herbs</li>
+        <li>Pumpkin leaves</li>
+        <li>Plant-based cheese</li>
+        <li>Soaked cashew nuts</li>
+        <li>Nutritional yeast</li>
+        <li>Garlic</li>
+        <li>Lemon juice</li>
+        <li>Water</li>
+        <li>Soy milk</li>
+        <li>Pepper and salt</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Thinly slice carrot, bell pepper, and zucchini. Prepare basil tomato sauce with Italian herbs.</li>
+        <li>Soak cashew nuts for 4+ hours or boil 15 minutes. Drain.</li>
+        <li>Blend cashews, nutritional yeast, garlic, lemon juice, soy milk, water, salt, and pepper until smooth to make cashew cheese sauce.</li>
+        <li>Preheat oven to 180°C. Layer in baking dish: tomato sauce, vegetable slices, pumpkin leaves, cashew sauce, plant-based cheese. Repeat.</li>
+        <li>Bake 35-40 minutes until vegetables tender and cheese melted.</li>
+        <li>Let rest 10 minutes before serving.</li>
+      </ol>
+
+      <h2>Variations</h2>
+      <p>You can customize the lasagne with different vegetables and seasonings.</p>
+
+      <ul class="arrow-sum">
+        <li>&rarr; <strong>Spinach lasagne:</strong> Add spinach between layers for extra greens.</li>
+        <li>&rarr; <strong>Mushroom lasagne:</strong> Slice mushrooms and layer with the zucchini.</li>
+        <li>&rarr; <strong>Spicy lasagne:</strong> Add chili flakes to the tomato sauce.</li>
+      </ul>
+
+    </section>
+  </main>
+</body>
+</html>

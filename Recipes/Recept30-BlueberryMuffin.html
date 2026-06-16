@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blueberry Muffins</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="./Pictures/Recept30-BlueBerryMuffin.png" alt="Blueberry muffins with blueberries and apple" />
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Blueberry Muffins</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Blueberry Muffins</td></tr>
+          <tr><th>Tags</th><td><code>breakfast</code>, <code>snack</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>Moist, lightly sweet muffins made with chia seeds, self‑raising flour, banana, almonds, olive oil, maple syrup, apple, and blueberries.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 10 min</li>
+        <li>🍳 Cook time: 25 min</li>
+        <li>🍽️ Servings: 8–10 muffins</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1 tablespoon chia seeds + 2 tablespoons water (chia “egg”)</li>
+        <li>150 g self‑rising flour</li>
+        <li>60 g chopped almonds</li>
+        <li>1 large ripe banana, mashed</li>
+        <li>80 ml olive oil</li>
+        <li>2–3 tablespoons maple syrup or agave (adjust to taste)</li>
+        <li>1 apple, peeled and grated or finely diced</li>
+        <li>100 g fresh or frozen blueberries</li>
+        <li>Pinch of salt</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Preheat the oven to 180°C (350°F) and line a muffin tin with paper liners.</li>
+        <li>Prepare the chia “egg”: mix 1 tablespoon chia seeds with 2 tablespoons water and let sit for 5–10 minutes until thick and gel‑like.</li>
+        <li>In a large bowl, combine the mashed banana, olive oil, maple syrup, and chia gel, then mix until smooth.</li>
+        <li>Add the grated or diced apple and gently stir in.</li>
+        <li>In a separate bowl, whisk together the self‑raising flour, chopped almonds, and a pinch of salt.</li>
+        <li>Pour the dry ingredients into the wet mixture and stir just until combined; do not overmix.</li>
+        <li>Gently fold in the blueberries so they don’t break too much.</li>
+        <li>Divide the batter evenly among the muffin cups, filling each about two‑thirds full.</li>
+        <li>Bake for 22–26 minutes, until the tops are golden and a toothpick comes out clean.</li>
+        <li>Let cool in the tin for 5 minutes, then transfer to a wire rack to cool completely or enjoy warm.</li>
+      </ol>
+
+    </section>
+  </main>
+</body>
+</html>

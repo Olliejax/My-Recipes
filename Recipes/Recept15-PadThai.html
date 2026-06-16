@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pad Thai</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <img src="./Pictures/Recept15-PadThai.png" alt="Pad Thai noodles with vegetables, tofu, peanuts, and herbs" />
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Pad Thai</h1>
+            <table>
+        <tbody>
+          <tr><th>Title</th><td>Pad Thai</td></tr>
+          <tr><th>Tags</th><td><code>Noodles</code>, <code>dinner</code>, <code>Thaï</code>, <code>Tofu</code></td></tr>
+          <tr><th>Date</th><td><code>2026-04-10</code></td></tr>
+          <tr><th>Personal Score</th><td>9 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>Sweet, salty, sour, and spicy Pad Thai with noodles, tofu, vegetables, peanuts, and a rich peanut-based sauce. Optional shrimp and egg can be added for a non-vegan version.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 20 min</li>
+        <li>🍳 Cook time: 15 min</li>
+        <li>🍽️ Servings: 4</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+    
+        <strong>For the wok:</strong>
+    <ul>
+        <li>Broccoli</li>
+        <li>Red bell pepper</li>
+        <li>Tofu</li>
+        <li>Peanuts</li>
+        <li>Coriander</li>
+        <li>Spring onion</li>
+        <li>3 garlic cloves</li>
+        <li>Noodles of choice</li>
+    </ul>
+
+        <strong>For the sauce:</strong>
+    <ul>
+        <li>2 tbsp soy sauce</li>
+        <li>1 tbsp sriracha</li>
+        <li>4 tsp brown sugar</li>
+        <li>3 tbsp rice vinegar</li>
+        <li>1 tbsp peanut butter</li>
+    </ul>
+
+        <strong>Non-vegan additions:</strong>
+    <ul>
+        <li>Shrimp</li>
+        <li>Egg</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Cook the noodles according to the package instructions. Drain and set aside.</li>
+        <li>Mix the soy sauce, sriracha, brown sugar, rice vinegar, and peanut butter in a bowl to make the sauce.</li>
+        <li>Heat oil in a wok or large pan and sauté the garlic until fragrant.</li>
+        <li>Add broccoli, red bell pepper, and tofu. Stir-fry until the vegetables are tender and the tofu is lightly golden.</li>
+        <li>If using shrimp or egg, cook them in the pan at this stage.</li>
+        <li>Add the noodles and sauce, then toss everything together until well coated.</li>
+        <li>Finish with spring onion, coriander, and chopped peanuts before serving.</li>
+      </ol>
+
+    </section>
+  </main>
+</body>
+</html>

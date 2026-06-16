@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Red Pepper Dip</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+
+  <main class="wrap">
+    <section class="hero">
+      <img src="Recipes/Pictures/Recept5-Redspicydip.png" alt="Red pepper dip in a bowl" />
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Red Pepper Dip</h1>
+
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Red Pepper Dip</td></tr>
+          <tr><th>Tags</th><td><code>dip</code>, <code>snack</code>, <code>apero</code></td></tr>
+          <tr><th>Date</th><td><code>2026-04-10</code></td></tr>
+          <tr><th>Personal Score</th><td>9,5 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>Ultra-creamy vegan red pepper dip made with roasted peppers, cashews, harissa aromatics, and bright lemon. Perfect with crackers, pita, or fresh vegetables.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 20 min (+ 2h soaking)</li>
+        <li>🍳 Cook time: 5 min</li>
+        <li>🍽️ Servings: 6</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>¼ cup + 1 tsp olive oil, divided</li>
+        <li>1 medium shallot, chopped</li>
+        <li>1 small hot chili, seeded if desired and chopped</li>
+        <li>2 cloves garlic, sliced</li>
+        <li>1 tsp sweet paprika, plus extra for serving</li>
+        <li>1 tsp nutritional yeast</li>
+        <li>1 cup raw cashews, sliced almonds, sunflower seeds (or mix), soaked 2+ hours, drained</li>
+        <li>1 roasted red pepper (jarred or homemade)</li>
+        <li>2 tbsp water (plus extra if needed)</li>
+        <li>2 tbsp lemon juice</li>
+        <li>1 tbsp tomato paste</li>
+        <li>1 tsp white wine vinegar</li>
+        <li>1 tsp Dijon mustard</li>
+        <li>1 tsp coconut aminos (or ½ tsp tamari)</li>
+        <li>Sea salt and black pepper, to taste</li>
+        <li>Chopped herbs, for serving</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Heat 1 tsp olive oil in a small pan over medium heat. Sauté shallot, chili, and garlic until soft with slight browning, about 5 minutes.</li>
+        <li>Add paprika and nutritional yeast, stir until fragrant (add splash of water if sticking). Remove from heat and cool slightly.</li>
+        <li>In a blender, combine sautéed mixture, drained cashews/seeds, roasted pepper, water, lemon juice, tomato paste, vinegar, Dijon, coconut aminos, salt, pepper, and remaining ¼ cup olive oil.</li>
+        <li>Blend on high 1-2 minutes until silky smooth, scraping sides as needed. Add water 1 tbsp at a time if too thick.</li>
+        <li>Taste and adjust: more salt, lemon, spice, or nutritional yeast as desired. Blend again if adjusting.</li>
+        <li>Serve with olive oil swirl, paprika sprinkle, and chopped herbs. Keeps 1 week in fridge.</li>
+      </ol>
+
+      <h2>Notes</h2>
+      <ul class="arrow-sum">
+        <li>&rarr; Use cashews + sunflower seeds for best texture, or all sunflower seeds for nut-free</li>
+        <li>&rarr; Fresno or cayenne peppers work great - adjust seeds for heat level</li>
+      </ul>
+
+    </section>
+  </main>
+</body>
+</html>

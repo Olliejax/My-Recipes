@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Fruit Salad</title>
+  <link rel="stylesheet" href="../Style2.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <a class="button-link2" href="#" onclick="goBackToRecipes(event)">← Back to recipes</a>
+    </section>
+
+
+<script>
+  function goBackToRecipes(event) {
+    event.preventDefault();
+
+    const hash = window.location.hash;
+    const section = hash.startsWith("#from=") ? hash.replace("#from=", "") : "";
+
+    if (section) {
+      window.location.href = "../index.html#" + section;
+    } else {
+      window.location.href = "../index.html";
+    }
+  }
+</script>
+
+    <section class="content">
+      <h1>Best Fruit Salad</h1>
+      <table>
+        <tbody>
+          <tr><th>Title</th><td>Best Fruit Salad</td></tr>
+          <tr><th>Tags</th><td><code>breakfast</code>, <code>snack</code></td></tr>
+          <tr><th>Date</th><td><code>21-04-2026</code></td></tr>
+          <tr><th>Personal Score</th><td>10 /10</td></tr>
+          <tr><th>Author</th><td>Me ☺︎</td></tr>
+        </tbody>
+      </table>
+
+      <p>A fresh and colorful fruit salad with apples, pears, mango, berries, pomegranate seeds, and mint.</p>
+
+      <ul class="meta">
+        <li>⏲️ Prep time: 20 min</li>
+        <li>🍳 Cook time: 0 min</li>
+        <li>🍽️ Servings: 4</li>
+      </ul>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>3 apples, cored and sliced</li>
+        <li>4 pears, cored and sliced</li>
+        <li>1 mango, peeled and diced</li>
+        <li>100 grams blueberries</li>
+        <li>1 pomegranate, seeds only</li>
+        <li>Large handful fresh mint leaves, roughly chopped</li>
+        <li>100 grams raspberries</li>
+      </ul>
+
+      <h2>Directions</h2>
+      <ol>
+        <li>Wash and dry all the fruit.</li>
+        <li>slice them in preferable sizes.</li>
+        <li>serve inn one big bowl and mix.</li>
+      </ol>
+
+      <h2>Serving suggestions</h2>
+      <ul>
+        <p> for longer freshness, add a squeeze of lemon juice to the fruit salad to prevent browning and enhance the flavors.</p>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
